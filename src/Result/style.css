@@ -1,0 +1,8 @@
+.result {
+    max-width: 90%;
+    height: 25px;
+    font-size: 25px;
+    text-align: center;
+    margin: 30px auto;
+    word-wrap: break-word;
+}

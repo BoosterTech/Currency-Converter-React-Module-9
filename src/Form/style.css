@@ -1,11 +1,13 @@
 .form {
     margin: auto;
     width: 550px;
+    max-width: 550px;
     background-color: rgba(255, 228, 196, 0);
     padding: 15px;
 }
 
 .form__header {
+    max-width: 100vh;
     text-align: center;
     font-size: large;
     color: rgb(255, 255, 255);
@@ -41,14 +43,14 @@
     margin: 30px auto;
 }
 
-.calculateButtonContainer {
+.calculateButton {
     text-align: center;
     margin-top: 25px;
     padding: 10px 0;
 }
 
 .form__submitButton {
-    width: 100%;
+    width: 100vh;
     height: 30px;
     margin: auto;
     background-color: rgb(175, 179, 175);
