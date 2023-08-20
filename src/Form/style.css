@@ -1,6 +1,6 @@
 .form {
     margin: auto;
-    width: 550px;
+    min-width: none;
     max-width: 550px;
     background-color: rgba(255, 228, 196, 0);
     padding: 15px;
@@ -44,7 +44,6 @@
 }
 
 .calculateButton {
-    max-width: 100%;
     text-align: center;
     margin-top: 25px;
     padding: 10px 0;
