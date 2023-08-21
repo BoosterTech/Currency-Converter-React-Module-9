@@ -1,7 +1,7 @@
 .form {
     margin: auto;
     min-width: none;
-    max-width: 550px;
+    max-width: 600px;
     background-color: rgba(255, 228, 196, 0);
     padding: 15px;
 }
@@ -35,14 +35,6 @@
     float: right;
 }
 
-.form__result {
-    max-width: 90%;
-    height: 25px;
-    font-size: 25px;
-    text-align: center;
-    margin: 30px auto;
-}
-
 .calculateButton {
     text-align: center;
     margin-top: 25px;
@@ -69,4 +61,10 @@
     margin: 15px auto 0;
     font-size: small;
     text-align: center;
+}
+
+@media (max-width<600px) {
+    .form {
+        width:600px;
+    }
 }
