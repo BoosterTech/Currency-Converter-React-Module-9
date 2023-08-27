@@ -53,7 +53,7 @@ const Form = ({ result, calculateResult }) => {
         </p>
       </div>
 
-      <Result result={result} />
+      <div><Result result={result} /></div>
 
       <div className="calculateButton">
         <button type="submit" className="form__submitButton">
