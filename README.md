@@ -6,7 +6,7 @@
 - React
   
 ### Demo:
- [https://boostertech.github.io/Currency-Calculator/](https://boostertech.github.io/currency-calculator-React/)
+https://boostertech.github.io/currency-calculator-React/
 ### How it works?
 1. Insert an **Amount** in PLN (*required field).
 2. Choose **Currency** you would like to convert to.
