@@ -12,18 +12,15 @@ function App() {
     ).rate;
 
     setResult({
-      sourceAmount : +amount,
-      finalAmount : amount/rate,
+      sourceAmount: +amount,
+      finalAmount: amount / rate,
       currency,
     });
   };
 
   return (
     <div className="App">
-      <Form 
-      result={result}
-      calculateResult={calculateResult}
-      />
+      <Form result={result} calculateResult={calculateResult} />
     </div>
   );
 }

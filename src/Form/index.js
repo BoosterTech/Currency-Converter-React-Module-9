@@ -10,10 +10,10 @@ const Form = ({ result, calculateResult }) => {
   const onSubmit = (event) => {
     event.preventDefault();
     calculateResult(currency, amount);
-  }
+  };
 
   return (
-    <form className="form" onSubmit={ onSubmit }>
+    <form className="form" onSubmit={onSubmit}>
       <h1 className="form__header">CURRENCY CONVERTER</h1>
       <div className="container">
         <p>
