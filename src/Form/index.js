@@ -3,13 +3,27 @@ import { currencies } from "../currencies";
 import "./style.css";
 import { Result } from "../Result";
 
-const Form = ({ result, calculateResult }) => {
+const Form = () => {
   const [currency, setCurrency] = useState(currencies[0].abbreviation);
   const [amount, setAmount] = useState();
 
   const onSubmit = (event) => {
     event.preventDefault();
     calculateResult(currency, amount);
+  };
+
+  const [result, setResult] = useState(null);
+
+  const calculateResult = (currency, amount) => {
+    const rate = currencies.find(
+      ({ abbreviation }) => abbreviation === currency
+    ).rate;
+
+    setResult({
+      sourceAmount: +amount,
+      finalAmount: amount / rate,
+      currency,
+    });
   };
 
   return (
@@ -53,7 +67,9 @@ const Form = ({ result, calculateResult }) => {
         </p>
       </div>
 
-      <div><Result result={result} /></div>
+      <div>
+        <Result result={result} />
+      </div>
 
       <div className="calculateButton">
         <button type="submit" className="form__submitButton">
