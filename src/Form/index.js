@@ -2,6 +2,7 @@ import { useState } from "react";
 import { currencies } from "../currencies";
 import "./style.css";
 import { Result } from "../Result";
+import { Clock } from "./Date";
 
 const Form = () => {
   const [currency, setCurrency] = useState(currencies[0].abbreviation);
@@ -28,6 +29,7 @@ const Form = () => {
 
   return (
     <form className="form" onSubmit={onSubmit}>
+      <Clock />
       <h1 className="form__header">CURRENCY CONVERTER</h1>
       <div className="container">
         <p>
